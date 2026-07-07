@@ -15,8 +15,10 @@
 
 body{
     background:#f8f3ee;
+    font-size:18px;
 }
 
+/* Header */
 header{
     background:#3e2723;
     color:white;
@@ -27,7 +29,7 @@ header{
 }
 
 .logo{
-    font-size:30px;
+    font-size:32px;
     font-weight:bold;
     color:#ffb74d;
 }
@@ -39,6 +41,7 @@ nav a{
     font-size:18px;
 }
 
+/* Hero Section */
 .hero{
     background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
     url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
@@ -46,74 +49,168 @@ nav a{
     background-position:center;
     color:white;
     text-align:center;
-    padding:120px 20px;
+    padding:140px 20px;
 }
 
 .hero h1{
-    font-size:55px;
+    font-size:60px;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:22px;
-    margin-bottom:30px;
+    font-size:25px;
+    margin-bottom:35px;
 }
 
 .btn{
     background:#ff9800;
     color:white;
-    padding:15px 30px;
+    padding:16px 35px;
     text-decoration:none;
-    border-radius:30px;
+    border-radius:50px;
+    font-size:20px;
 }
 
+/* Menu */
 .menu{
-    padding:60px 8%;
+    padding:70px 8%;
     text-align:center;
 }
 
 .menu h2{
-    margin-bottom:40px;
     color:#3e2723;
+    margin-bottom:40px;
+    font-size:40px;
 }
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .card h3{
-    margin-bottom:10px;
+    color:#3e2723;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    font-size:18px;
+}
+
+/* About */
+.about{
+    background:#fff3e0;
+    text-align:center;
+    padding:70px 8%;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
     color:#3e2723;
 }
 
-.about{
-    background:#fff3e0;
-    padding:60px 8%;
-    text-align:center;
+.about p{
+    font-size:20px;
 }
 
+/* Contact */
 .contact{
-    padding:60px 8%;
     text-align:center;
+    padding:70px 8%;
 }
 
+.contact h2{
+    font-size:40px;
+    color:#3e2723;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:20px;
+    margin:10px 0;
+}
+
+/* Footer */
 footer{
     background:#3e2723;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px;
+    font-size:18px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+    font-size:20px;
+}
+
+.logo{
+    font-size:38px;
+}
+
+.hero{
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.btn{
+    font-size:20px;
+    padding:18px 35px;
+}
+
+.menu h2,
+.about h2,
+.contact h2{
+    font-size:32px;
+}
+
+.card{
+    padding:30px;
+}
+
+.card h3{
+    font-size:26px;
+}
+
+.card p,
+.about p,
+.contact p{
+    font-size:20px;
+}
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -137,14 +234,15 @@ footer{
 <h2>Our Special Menu</h2>
 
 <div class="cards">
+
 <div class="card">
 <h3>☕ Hot Coffee</h3>
-<p>Fresh and delicious coffee.</p>
+<p>Fresh and delicious coffee available here.</p>
 </div>
 
 <div class="card">
 <h3>🎂 Cakes</h3>
-<p>Chocolate and special cakes.</p>
+<p>Chocolate and special cakes available.</p>
 </div>
 
 <div class="card">
@@ -154,13 +252,14 @@ footer{
 
 <div class="card">
 <h3>🍨 Ice Cream</h3>
-<p>Different flavours of ice cream.</p>
+<p>Different flavours of ice cream available.</p>
 </div>
 
 <div class="card">
 <h3>🍛 Paneer Matar</h3>
-<p>Tasty and fresh paneer matar.</p>
+<p>Tasty and fresh paneer matar available.</p>
 </div>
+
 </div>
 </section>
 
